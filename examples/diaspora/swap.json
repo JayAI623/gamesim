@@ -1,0 +1,113 @@
+{
+ "_doc": "第 2 轮结算后（2028 大选在第 2 轮内）按分支给美国联邦政府换效用权重，并在第 3 轮开头公布结果。分层分配：run_1/run_2 民主党、run_3 共和党；汇总时按 p 加权（0.6/2、0.6/2、0.4/1 → 0.3/0.3/0.4）。",
+ "after_round": 2,
+ "assign": {
+  "1": "D",
+  "2": "D",
+  "3": "R"
+ },
+ "p": {
+  "D": 0.6,
+  "R": 0.4
+ },
+ "branches": {
+  "D": {
+   "patch": [
+    {
+     "op": "replace",
+     "path": "/entities/0/utility",
+     "value": [
+      {
+       "var": "C",
+       "weight": 0.36,
+       "direction": "-",
+       "shape": "concave"
+      },
+      {
+       "var": "W",
+       "weight": 0.19,
+       "direction": "-",
+       "shape": "threshold",
+       "threshold": 70
+      },
+      {
+       "var": "S",
+       "weight": 0.11,
+       "direction": "+",
+       "shape": "peak",
+       "threshold": 45
+      },
+      {
+       "var": "E",
+       "weight": 0.14,
+       "direction": "+",
+       "shape": "peak",
+       "threshold": 50
+      },
+      {
+       "var": "V",
+       "weight": 0.2,
+       "direction": "+",
+       "shape": "concave"
+      }
+     ]
+    },
+    {
+     "op": "replace",
+     "path": "/entities/0/soft_rules/2",
+     "value": "特朗普已卸任（第 22 修正案），交易型权重取消"
+    }
+   ],
+   "event": "2028-11 美国大选结果揭晓：民主党赢得白宫，2029-01-20 就任；新政府更重视人才通道（V），出口管制和 10043 号公告保留。"
+  },
+  "R": {
+   "patch": [
+    {
+     "op": "replace",
+     "path": "/entities/0/utility",
+     "value": [
+      {
+       "var": "C",
+       "weight": 0.4,
+       "direction": "-",
+       "shape": "concave"
+      },
+      {
+       "var": "W",
+       "weight": 0.18,
+       "direction": "-",
+       "shape": "threshold",
+       "threshold": 70
+      },
+      {
+       "var": "S",
+       "weight": 0.18,
+       "direction": "+",
+       "shape": "peak",
+       "threshold": 60
+      },
+      {
+       "var": "E",
+       "weight": 0.16,
+       "direction": "+",
+       "shape": "peak",
+       "threshold": 45
+      },
+      {
+       "var": "V",
+       "weight": 0.08,
+       "direction": "+",
+       "shape": "concave"
+      }
+     ]
+    },
+    {
+     "op": "replace",
+     "path": "/entities/0/soft_rules/2",
+     "value": "特朗普已卸任（第 22 修正案），交易型权重取消"
+    }
+   ],
+   "event": "2028-11 美国大选结果揭晓：共和党赢得白宫，2029-01-20 就任；新政府对华更强硬（C、S 权重上调），人才通道（V）权重下调。"
+  }
+ }
+}
