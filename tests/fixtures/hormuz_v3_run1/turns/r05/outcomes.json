@@ -1,0 +1,54 @@
+{
+  "actions": {
+    "美国": {
+      "p_gm": 0.5,
+      "dice": 0.104,
+      "succeeded": true,
+      "action": "签卡塔尔窄协议，首批同日解封，第二批挂移出时间表"
+    },
+    "IRGC核心": {
+      "p_gm": 0.55,
+      "dice": 0.286,
+      "succeeded": true,
+      "action": "托管释放后14天内放IAEA进申报设施，停扣船"
+    },
+    "伊朗外交线": {
+      "p_gm": 0.4,
+      "dice": 0.729,
+      "succeeded": false,
+      "action": "有条件签字，附'移出须双方同意'和点位不受打击"
+    },
+    "以色列": {
+      "p_gm": 0.55,
+      "dice": 0.213,
+      "succeeded": true,
+      "action": "继续有条件暂停，移出日期挂第二批，黎南低频打击"
+    },
+    "中国": {
+      "p_gm": 0.6,
+      "dice": 0.788,
+      "succeeded": false,
+      "action": "劝IRGC按时放行IAEA，推安理会主席声明，不做担保"
+    },
+    "海湾–调解集团": {
+      "p_gm": 0.45,
+      "dice": 0.323,
+      "succeeded": true,
+      "action": "同日担保条款、'二阶段定日期移出或稀释'措辞、黎巴嫩首会"
+    }
+  },
+  "exogenous": [
+    {
+      "event": "黎南打击造成重大伤亡，伊方借机暂停执行",
+      "p": 0.2,
+      "dice": 0.76,
+      "happened": false
+    },
+    {
+      "event": "AI/资本市场回调推高G",
+      "p": 0.15,
+      "dice": 0.998,
+      "happened": false
+    }
+  ]
+}

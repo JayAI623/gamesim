@@ -1,0 +1,54 @@
+{
+  "actions": {
+    "美国": {
+      "p_gm": 0.6,
+      "dice": 0.466,
+      "succeeded": true,
+      "action": "接受同日执行，托管提前24h到账，首批解封挂钩清点，部署有限防空"
+    },
+    "IRGC核心": {
+      "p_gm": 0.45,
+      "dice": 0.533,
+      "succeeded": false,
+      "action": "有条件接受同日方案，只清点已暴露设施，书面排除移出"
+    },
+    "伊朗外交线": {
+      "p_gm": 0.55,
+      "dice": 0.585,
+      "succeeded": false,
+      "action": "经卡塔尔/阿曼签同日文本，附不移出、30天可逆条款"
+    },
+    "以色列": {
+      "p_gm": 0.55,
+      "dice": 0.951,
+      "succeeded": false,
+      "action": "服从30天暂停，共享藏匿点线索，换书面移出前提与补给"
+    },
+    "中国": {
+      "p_gm": 0.4,
+      "dice": 0.086,
+      "succeeded": true,
+      "action": "双渠道劝伊14天内放IAEA进场，换美关税休战延长"
+    },
+    "海湾–调解集团": {
+      "p_gm": 0.5,
+      "dice": 0.306,
+      "succeeded": true,
+      "action": "卡塔尔托管冻结账户+两层清点+黎巴嫩附件的桥接文本"
+    }
+  },
+  "exogenous": [
+    {
+      "event": "参议院通过战争权力决议",
+      "p": 0.35,
+      "dice": 0.332,
+      "happened": true
+    },
+    {
+      "event": "胡塞或不明无人机袭扰延布/富查伊拉",
+      "p": 0.12,
+      "dice": 0.266,
+      "happened": false
+    }
+  ]
+}

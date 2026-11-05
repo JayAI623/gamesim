@@ -1,0 +1,54 @@
+{
+  "actions": {
+    "美国": {
+      "p_gm": 0.5,
+      "dice": 0.968,
+      "succeeded": false,
+      "action": "有条件续期扩大试点：启动清点440kg换分批解封"
+    },
+    "IRGC核心": {
+      "p_gm": 0.5,
+      "dice": 0.302,
+      "succeeded": true,
+      "action": "守住航道暂停拦船，以克制换取托管扩额和部分解封"
+    },
+    "伊朗外交线": {
+      "p_gm": 0.45,
+      "dice": 0.004,
+      "succeeded": true,
+      "action": "提出同步包：同日解封解冻换开航85%加境内清点"
+    },
+    "以色列": {
+      "p_gm": 0.4,
+      "dice": 0.274,
+      "succeeded": true,
+      "action": "对伊朗核与导弹采购链做隐蔽打击，游说把续期挂钩移出"
+    },
+    "中国": {
+      "p_gm": 0.6,
+      "dice": 0.264,
+      "succeeded": true,
+      "action": "公开背书续期和同步方案，经托管账户买伊朗油，私下劝IRGC"
+    },
+    "海湾–调解集团": {
+      "p_gm": 0.45,
+      "dice": 0.145,
+      "succeeded": true,
+      "action": "阿曼和卡塔尔牵头续期，把清点和分批解封同日挂钩"
+    }
+  },
+  "exogenous": [
+    {
+      "event": "AI和科技股回调，美股明显下跌",
+      "p": 0.2,
+      "dice": 0.118,
+      "happened": true
+    },
+    {
+      "event": "美联储12月因通胀暂停降息",
+      "p": 0.35,
+      "dice": 0.982,
+      "happened": false
+    }
+  ]
+}

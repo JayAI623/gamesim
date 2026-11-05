@@ -1,0 +1,54 @@
+{
+  "actions": {
+    "美国": {
+      "p_gm": 0.6,
+      "dice": 0.428,
+      "succeeded": true,
+      "action": "接受同步分阶段：首批解封、托管解冻与停扣船同日，IAEA 14天内进场"
+    },
+    "IRGC核心": {
+      "p_gm": 0.65,
+      "dice": 0.952,
+      "succeeded": false,
+      "action": "暂停航道外扣船，书面接受清点与首批解封同日，440kg不移出"
+    },
+    "伊朗外交线": {
+      "p_gm": 0.45,
+      "dice": 0.915,
+      "succeeded": false,
+      "action": "书面接受同日草案，要求托管翻倍、首笔提前24小时到账"
+    },
+    "以色列": {
+      "p_gm": 0.4,
+      "dice": 0.359,
+      "succeeded": true,
+      "action": "暂停隐蔽行动，经美方给IAEA藏匿点情报，游说把移出写入第二批前提"
+    },
+    "中国": {
+      "p_gm": 0.6,
+      "dice": 0.817,
+      "succeeded": false,
+      "action": "背书同日方案，私下劝伊接受境内清点，换美方延长关税休战"
+    },
+    "海湾–调解集团": {
+      "p_gm": 0.55,
+      "dice": 0.76,
+      "succeeded": false,
+      "action": "阿曼/卡塔尔担保同日执行，扩托管，黎巴嫩停火平行轨道同步启动"
+    }
+  },
+  "exogenous": [
+    {
+      "event": "众议院通过战争权力决议",
+      "p": 0.35,
+      "dice": 0.082,
+      "happened": true
+    },
+    {
+      "event": "AI科技股与美股进一步回调",
+      "p": 0.3,
+      "dice": 0.587,
+      "happened": false
+    }
+  ]
+}
